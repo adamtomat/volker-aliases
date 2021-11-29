@@ -1,0 +1,10 @@
+alias v=volker
+alias vc='volker composer'
+alias vd='volker down'
+alias ve='volker enter'
+alias vi='volker init'
+alias vii='volker install'
+alias vr='volker down && volker up'
+alias vu='volker up'
+alias vart='volker artisan'
+alias vtink='volker artisan tinker'
