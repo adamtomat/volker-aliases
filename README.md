@@ -29,6 +29,10 @@ Using [Antigen](https://github.com/zsh-users/antigen), it becomes really easy to
 
 2. Restart terminal
 
+**To update:**
+
+`antigen update adamtomat/volker-aliases`
+
 ### Manual 
 
 1. To install volekr-aliases, simply clone the repo...
