@@ -1,4 +1,5 @@
 alias v=volker
+alias mfs='volker artisan migrate:fresh --seed'
 alias vc='volker composer'
 alias vd='volker down'
 alias ve='volker enter'
