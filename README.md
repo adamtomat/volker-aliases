@@ -16,6 +16,7 @@ This plugin adds handy aliases when working with Volker.
 | `vex` | `volker exec app` |
 | `vart` | `volker artisan` |
 | `vtink` | `volker artisan tinker` |
+| `mfs` | `volker php artisan migrate:fresh --seed` |
 
 ## Installation
 
