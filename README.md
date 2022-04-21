@@ -9,13 +9,14 @@ This plugin adds handy aliases when working with Volker.
 | `vd` | `volker down` |
 | `ve` | `volker enter` |
 | `vini` | `volker init` |
-| `vins` | `volker install` |
+| `vp` | `volker prepare` |
 | `vr` | `volker down && volker up` |
 | `vu` | `volker up` |
 | `vup` | `volker up` |
 | `vex` | `volker exec app` |
 | `vart` | `volker artisan` |
 | `vtink` | `volker artisan tinker` |
+| `vnuke` | `docker kill $(docker ps -q) && docker system prune && docker volume prune` |
 | `mfs` | `volker php artisan migrate:fresh --seed` |
 
 ## Installation
