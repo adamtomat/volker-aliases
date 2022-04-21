@@ -37,7 +37,7 @@ Using [Antigen](https://github.com/zsh-users/antigen), it becomes really easy to
 
 ### Manual 
 
-1. To install volekr-aliases, simply clone the repo...
+1. To install volker-aliases, simply clone the repo...
 
 `git clone https://github.com/adamtomat/volker-aliases.git ~/.oh-my-zsh/custom/plugins/volker-aliases`
 
