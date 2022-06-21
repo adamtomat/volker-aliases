@@ -16,7 +16,7 @@ This plugin adds handy aliases when working with Volker.
 | `vex` | `volker exec app` |
 | `vart` | `volker artisan` |
 | `vtink` | `volker artisan tinker` |
-| `vnuke` | `docker kill $(docker ps -q); docker system prune; docker volume prune` |
+| `vnuke` | `docker kill $(docker ps -q); docker system prune; docker volume prune --filter "label!=volker.preserve=true"` |
 | `mfs` | `volker php artisan migrate:fresh --seed` |
 
 ## Installation
