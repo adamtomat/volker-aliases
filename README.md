@@ -6,6 +6,7 @@ This plugin adds handy aliases when working with Volker.
 | ----- | ------------ |
 | `v` | `volker` |
 | `vc` | `volker composer` |
+| `vcu` | `volker composer update` |
 | `vd` | `volker down` |
 | `ve` | `volker enter` |
 | `vini` | `volker init` |
@@ -18,6 +19,7 @@ This plugin adds handy aliases when working with Volker.
 | `vtink` | `volker artisan tinker` |
 | `vnuke` | `docker kill $(docker ps -q); docker system prune; docker volume prune --filter "label!=volker.preserve=true"` |
 | `mfs` | `volker php artisan migrate:fresh --seed` |
+| `vdb` | `volker db:open` |
 
 ## Installation
 
