@@ -14,6 +14,8 @@ This plugin adds handy aliases when working with Volker.
 | `vr` | `volker down && volker up` |
 | `vu` | `volker up` |
 | `vup` | `volker up` |
+| `va` | `volker about` |
+| `vas` | `volker about | grep Status` |
 | `vex` | `volker exec app` |
 | `vart` | `volker artisan` |
 | `vtink` | `volker artisan tinker` |
