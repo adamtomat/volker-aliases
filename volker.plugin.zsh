@@ -7,10 +7,7 @@ alias ve='volker enter'
 alias vini='volker init'
 alias vins='volker install'
 alias vr='volker down && volker up'
-alias vu='volker up'
-alias vuu='(cd ../ && volker up)'
 alias vup='volker up'
-alias vuup='(cd ../ && volker up)'
 alias va='volker about'
 alias vas='volker about | grep Status'
 alias vex='volker exec app'
@@ -18,3 +15,8 @@ alias vart='volker artisan'
 alias vtink='volker artisan tinker'
 alias vnuke='docker kill $(docker ps -q); docker system prune; docker volume prune --filter "label!=volker.preserve=true"'
 alias vdb='volker db:open'
+
+vu() {
+    CD_PATH="${1:=./}"
+    (cd $CD_PATH && volker up)
+}
