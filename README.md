@@ -13,7 +13,9 @@ This plugin adds handy aliases when working with Volker.
 | `vp` | `volker prepare` |
 | `vr` | `volker down && volker up` |
 | `vu` | `volker up` |
+| `vuu` | `(cd ../ && volker up)` |
 | `vup` | `volker up` |
+| `vuup` | `(cd ../ && volker up)` |
 | `va` | `volker about` |
 | `vas` | `volker about \| grep Status` |
 | `vex` | `volker exec app` |
