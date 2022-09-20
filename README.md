@@ -13,9 +13,9 @@ This plugin adds handy aliases when working with Volker.
 | `vp` | `volker prepare` |
 | `vr` | `volker down && volker up` |
 | `vu` | `volker up` |
-| `vuu` | `(cd ../ && volker up)` |
+| `vu ../` | `(cd ../ && volker up)` - Will `cd` into the provided directory |
 | `vup` | `volker up` |
-| `vuup` | `(cd ../ && volker up)` |
+| `vup ../` | `(cd ../ && volker up)` - Will `cd` into the provided directory |
 | `va` | `volker about` |
 | `vas` | `volker about \| grep Status` |
 | `vex` | `volker exec app` |
