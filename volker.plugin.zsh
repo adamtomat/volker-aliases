@@ -18,5 +18,10 @@ alias vdb='volker db:open'
 
 vu() {
     CD_PATH="${1:=./}"
-    (cd $CD_PATH && volker up)
+
+    if [ $CD_PATH = "./" ]; then
+        volker up
+    else
+        (cd $CD_PATH && echo "Running from: ${PWD}" && volker up)
+    fi
 }
