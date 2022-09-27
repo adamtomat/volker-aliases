@@ -2,12 +2,10 @@ alias v=volker
 alias mfs='volker artisan migrate:fresh --seed'
 alias vc='volker composer'
 alias vcu='volker composer update'
-alias vd='volker down'
-alias ve='volker enter'
 alias vini='volker init'
 alias vins='volker install'
 alias vr='volker down && volker up'
-alias vup='volker up'
+alias vup='vu'
 alias va='volker about'
 alias vas='volker about | grep Status'
 alias vex='volker exec app'
@@ -16,12 +14,31 @@ alias vtink='volker artisan tinker'
 alias vnuke='docker kill $(docker ps -q); docker system prune; docker volume prune --filter "label!=volker.preserve=true"'
 alias vdb='volker db:open'
 
+cdUpAndRun() {
+    CD_PATH="$1"
+    CMD_TO_RUN="$2"
+
+    if [ $CD_PATH = "./" ]; then
+        eval "$CMD_TO_RUN"
+    else
+        (cd $CD_PATH && echo "Running from: ${PWD}" && eval "$CMD_TO_RUN")
+    fi
+}
+
 vu() {
     CD_PATH="${1:=./}"
 
-    if [ $CD_PATH = "./" ]; then
-        volker up
-    else
-        (cd $CD_PATH && echo "Running from: ${PWD}" && volker up)
-    fi
+    cdUpAndRun $CD_PATH "volker up"
+}
+
+vd() {
+    CD_PATH="${1:=./}"
+
+    cdUpAndRun $CD_PATH "volker down"
+}
+
+ve() {
+    CD_PATH="${1:=./}"
+
+    cdUpAndRun $CD_PATH "volker enter"
 }
