@@ -1,8 +1,8 @@
 alias v=volker
 alias vrust='volker-rust'
 alias mfs='volker-rust artisan migrate:fresh --seed'
-alias vc='volker-rust composer'
-alias vcu='volker-rust composer update'
+alias vc='volker composer'
+alias vcu='volker composer update'
 alias vini='volker-rust init'
 alias vr='volker-rust down && volker-rust up'
 alias vp='volker-rust prepare'
