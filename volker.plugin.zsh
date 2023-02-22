@@ -13,6 +13,7 @@ alias vart='volker artisan'
 alias vtink='volker artisan tinker'
 alias vnuke='docker kill $(docker ps -q); docker system prune; docker volume prune --filter "label!=volker.preserve=true"'
 alias vdb='volker db:open'
+alias vrun='volker run'
 
 cdUpAndRun() {
     CD_PATH="$1"
