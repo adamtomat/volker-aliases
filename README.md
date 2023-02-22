@@ -26,6 +26,7 @@ This plugin adds handy aliases when working with Volker.
 | `vnuke` | `docker kill $(docker ps -q); docker system prune; docker volume prune --filter "label!=volker.preserve=true"` |
 | `mfs` | `volker php artisan migrate:fresh --seed` |
 | `vdb` | `volker db:open` |
+| `vrun` | `volker run` - Used to run Volker scripts |
 
 ## Installation
 
