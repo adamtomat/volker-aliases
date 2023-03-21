@@ -30,7 +30,7 @@ cdUpAndRun() {
 vu() {
     CD_PATH="${1:=./}"
 
-    cdUpAndRun $CD_PATH "volker-rust up"
+    cdUpAndRun $CD_PATH "~/Projects/volker/volker up"
 }
 
 vd() {
