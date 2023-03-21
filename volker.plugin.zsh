@@ -4,8 +4,9 @@ alias mfs='volker-rust artisan migrate:fresh --seed'
 alias vc='volker composer'
 alias vcu='volker composer update'
 alias vini='volker-rust init'
-alias vr='volker-rust down && volker-rust up'
+alias vr='vd && vu'
 alias vp='volker-rust prepare'
+alias vu='~/Projects/volker/volker up'
 alias vup='vu'
 alias va='volker about'
 alias vas='volker about | grep Status'
@@ -27,12 +28,12 @@ cdUpAndRun() {
     fi
 }
 
-vu() {
-    CD_PATH="${1:=./}"
-    shift
+# vu() {
+#     CD_PATH="${1:=./}"
+#     shift
 
-    cdUpAndRun "$CD_PATH" "~/Projects/volker/volker up $*"
-}
+#     cdUpAndRun "$CD_PATH" "~/Projects/volker/volker up $*"
+# }
 
 vd() {
     CD_PATH="${1:=./}"
