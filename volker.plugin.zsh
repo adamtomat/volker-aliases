@@ -1,5 +1,4 @@
 alias v=volker
-alias vrust='volker'
 alias mfs='volker artisan migrate:fresh --seed'
 alias vc='volker composer'
 alias vcu='volker composer update'
