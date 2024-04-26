@@ -1,17 +1,17 @@
 alias v=volker
-alias vrust='volker-rust'
-alias mfs='volker-rust artisan migrate:fresh --seed'
+alias vrust='volker'
+alias mfs='volker artisan migrate:fresh --seed'
 alias vc='volker composer'
 alias vcu='volker composer update'
-alias vini='volker-rust init'
-alias vr='volker-rust down && volker-rust up'
-alias vp='volker-rust prepare'
+alias vini='volker init'
+alias vr='volker down && volker up'
+alias vp='volker prepare'
 alias vup='vu'
 alias va='volker about'
 alias vas='volker about | grep Status'
-alias vex='volker-rust exec app'
-alias vart='volker-rust artisan'
-alias vtink='volker-rust artisan tinker'
+alias vex='volker exec app'
+alias vart='volker artisan'
+alias vtink='volker artisan tinker'
 alias vnuke='docker kill $(docker ps -q); docker system prune; docker volume prune --filter "label!=volker.preserve=true"'
 alias vdb='volker db:open'
 alias vrun='volker run'
@@ -30,17 +30,17 @@ cdUpAndRun() {
 vu() {
     CD_PATH="${1:=./}"
 
-    cdUpAndRun $CD_PATH "volker-rust up"
+    cdUpAndRun $CD_PATH "volker up"
 }
 
 vd() {
     CD_PATH="${1:=./}"
 
-    cdUpAndRun $CD_PATH "volker-rust down"
+    cdUpAndRun $CD_PATH "volker down"
 }
 
 ve() {
     CD_PATH="${1:=./}"
 
-    cdUpAndRun $CD_PATH "volker-rust enter"
+    cdUpAndRun $CD_PATH "volker enter"
 }
