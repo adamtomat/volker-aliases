@@ -7,6 +7,7 @@ This plugin adds handy aliases when working with Volker.
 | `v` | `volker` |
 | `vc` | `volker composer` |
 | `vcu` | `volker composer update` |
+| `vcus` | `(cd site && volker composer update)` |
 | `vd` | `volker down` |
 | `vd ../` | `(cd ../ && volker down)` - Will `cd` into the provided directory |
 | `ve` | `volker enter` |
