@@ -2,6 +2,7 @@ alias v=volker
 alias mfs='volker artisan migrate:fresh --seed'
 alias vc='volker composer'
 alias vcu='volker composer update'
+alias vcus='(cd site && volker composer update)'
 alias vini='volker init'
 alias vr='volker down && volker up'
 alias vp='volker prepare'
